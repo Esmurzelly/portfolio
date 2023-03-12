@@ -1,0 +1,30 @@
+.button_detail {
+  width: 100px;
+}
+.button_detail a {
+  color: #fff;
+  text-decoration: none;
+}
+.list_of_buttons {
+  display: flex;
+  gap: 10px;
+}
+.detail_container {
+  padding: 10px;
+}
+.card_content {
+  display: flex;
+  gap: 30px;
+}
+.card_content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.card_content__img img {
+  border-radius: 20px;
+}
