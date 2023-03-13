@@ -63,7 +63,7 @@ const NavBar = () => {
                   className={aciveLink === 'connect' ? 'active navbar-link' : 'navbar-link'}
                   onClick = {() => onUpdateActiveLink('connect')}
                 >
-                  Projects
+                  Get in Touch
                 </Nav.Link>
               </Nav>
               <span className='navbar-text'>
