@@ -58,12 +58,19 @@ const NavBar = () => {
                 >
                   Projects
                 </Nav.Link>
+                <Nav.Link 
+                  href="#connect" 
+                  className={aciveLink === 'connect' ? 'active navbar-link' : 'navbar-link'}
+                  onClick = {() => onUpdateActiveLink('connect')}
+                >
+                  Projects
+                </Nav.Link>
               </Nav>
               <span className='navbar-text'>
                 <div className="social-icon">
                   <a href="https://github.com/Esmurzelly"><img src={navIcon1} alt="github_account" /></a>
                   <a href="https://t.me/Esmurzelly"><img src={navIcon2} alt="telegram_account" /></a>
-                  <a href="#"><img src={navIcon3} alt="instagram_account" /></a>
+                  <a href="https://www.instagram.com/esmurzelly"><img src={navIcon3} alt="instagram_account" /></a>
                 </div>            
                   <a href="#connect">
                     <button className="vvd">

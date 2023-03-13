@@ -17,9 +17,9 @@ const Footer = () => {
                     <Col sm={6}></Col>
                     <Col className='text-center text-sm-end' sm={6}>
                         <div className="social-icon">
-                            <a href=""><img src={navIcon1} alt="" /></a>
-                            <a href=""><img src={navIcon2} alt="" /></a>
-                            <a href=""><img src={navIcon3} alt="" /></a>
+                            <a href="https://github.com/Esmurzelly"><img src={navIcon1} alt="" /></a>
+                            <a href="https://t.me/Esmurzelly"><img src={navIcon2} alt="" /></a>
+                            <a href="https://www.instagram.com/esmurzelly"><img src={navIcon3} alt="" /></a>
                         </div>
                         <p>CopyRight 2023. All Right Reserved</p>
                     </Col>

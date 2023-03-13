@@ -52,7 +52,7 @@ const Banner = () => {
                         {({isVisible}) => 
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <span className='tagline'>Welcome to my Portfolio</span>
-                                <h1>{`Hi I'm webdecoder `} <span className='wrap'>{text}</span></h1>
+                                <h1>{`Hi I'm Adam `} <span className='wrap'>{text}</span></h1>
                                 <p>I am Frontend Developer using ReactJS for creating projects. There are my works for introducing who I am and what I can do. I hope you'll like it. Thanks :)</p>
                                 <a href="#connect">
                                     <button >Let's connect <ArrowRightCircle size={25} /> </button>

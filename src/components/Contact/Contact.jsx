@@ -39,11 +39,11 @@ const Contact = () => {
         let result = response.json();
         setFormDetails(formInitialDetails);
 
-        if(result.code === 200) {
-            setStatus({success: true, message: 'Message sent successfully'});
-        } else {
-            setStatus({success: false, message: "Smth went wrong, please try again later."})
-        }
+        // if(result.code === 200) {
+        //     setStatus({success: true, message: 'Message sent successfully'});
+        // } else {
+        //     setStatus({success: false, message: "Smth went wrong, please try again later."})
+        // }
     };
 
     return ( 

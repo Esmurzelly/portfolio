@@ -175,3 +175,9 @@ nav.navbar
 nav.navbar .navbar-toggler-icon[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
 }
+
+@media (max-width: 384px) {
+  .navbar-text button {
+    padding: 4px 4px;
+  }
+}

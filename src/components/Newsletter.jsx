@@ -7,7 +7,7 @@ const Newsletter = ({ onValidated, status, message}) => {
 
     useEffect(() => {
         if(status === 'success') clearField()
-    }, [status])
+    }, [status]);
 
     const handleSubmit =  (e) => {
         e.preventDefault();

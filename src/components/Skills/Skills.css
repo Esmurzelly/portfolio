@@ -52,3 +52,9 @@
   z-index: -4;
   filter: blur(44px);
 }
+
+@media (max-width: 448px) {
+  .skill-bx .stack img {
+    width: 50px;
+  }
+}

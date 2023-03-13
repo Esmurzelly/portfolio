@@ -12,7 +12,6 @@ import DictionaryAppImg from './assets/img/projects/DictionaryApp/main.png';
 import BankCardCheckingImg from './assets/img/projects/Card Holder/main.png';
 import CountriesListImg from './assets/img/projects/Country API/main.png';
 
-
 import QRCodeImg from './assets/img/projects/QR/main.png';
 import JobsFilteringImg from './assets/img/projects/Jobs_filter/main.png';
 import PAMImg from './assets/img/projects/PAM/main.png';
