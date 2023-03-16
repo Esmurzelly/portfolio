@@ -1,19 +1,21 @@
 import React from 'react';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
-import ProjectCard from '../components/ProjectCard/ProjectCard';
-import colorSharp2 from '../assets/img/color-sharp2.png';
-import TrackVisibility from 'react-on-screen';
-import 'animate.css';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
-import projImg3 from '../assets/img/project-img3.png';
-import NavBar from '../components/NavBar/NavBar';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
 
-const ProjectList = ({projects}) => {
-    const navigate = useNavigate();
+import ProjectCard from '../components/ProjectCard/ProjectCard';
+
+import { useSelector } from 'react-redux';
+
+import { Container, Row, Col, Tab } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+
+import 'animate.css';
+
+import TrackVisibility from 'react-on-screen';
+
+import colorSharp2 from '../assets/img/color-sharp2.png';
+
+const ProjectList = () => {
+  const projects = useSelector(state => state.projects.projects);
 
   return (
     <section className="projects" id="projects">
@@ -41,14 +43,12 @@ const ProjectList = ({projects}) => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects
-                      .map((project, index) => {
-                        return <ProjectCard {...project} key={index}/>
-                      })}
+                    {projects.map((project, index) => {
+                      return <ProjectCard {...project} key={index} />;
+                    })}
                   </Row>
                 </Tab.Pane>
 
-                
                 <Button variant="primary" className="button_projects">
                   <Link to="/">Go Home</Link>
                 </Button>

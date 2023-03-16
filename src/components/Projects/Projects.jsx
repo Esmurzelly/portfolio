@@ -1,19 +1,23 @@
 import React from 'react';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
-import ProjectCard from '../ProjectCard/ProjectCard';
-import colorSharp2 from '../../assets/img/color-sharp2.png';
-import TrackVisibility from 'react-on-screen';
-import 'animate.css';
-import projImg1 from '../../assets/img/project-img1.png';
-import projImg2 from '../../assets/img/project-img2.png';
-import projImg3 from '../../assets/img/project-img3.png';
+
+import { useSelector } from 'react-redux';
 
 import { Link } from 'react-router-dom';
+
+import ProjectCard from '../ProjectCard/ProjectCard';
+
+import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+
+import TrackVisibility from 'react-on-screen';
+import 'animate.css';
+
+import colorSharp2 from '../../assets/img/color-sharp2.png';
 
 import './Projects.css';
 
-const Projects = ({projects}) => {
+const Projects = () => {
+  const projects = useSelector(state => state.projects.projects);
   return (
     <section className="projects" id="projects">
       <Container>
@@ -84,10 +88,9 @@ const Projects = ({projects}) => {
                   </Row>
                 </Tab.Pane>
 
-                <Button variant='primary' className='button_projects'>
-                  <Link to='/projects'>Whole List of projects</Link>
+                <Button variant="primary" className="button_projects">
+                  <Link to="/projects">Whole List of projects</Link>
                 </Button>
-
               </Tab.Content>
             </Tab.Container>
           </Col>
