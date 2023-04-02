@@ -17,6 +17,7 @@ import WaterCompanyImg from '../assets/img/projects/WaterCompany/main.png';
 import DHLImg from '../assets/img/projects/DHL/main.png';
 import Cube3D from '../assets/img/projects/Cube3D/main.png';
 import ListDatabase from '../assets/img/projects/React + PostgreSQL/main.png';
+import PortfolioImg from '../assets/img/projects/Portfolio/portfilio.png'
 
 
 const projectSlice = createSlice({
@@ -165,6 +166,16 @@ const projectSlice = createSlice({
           live: 'https://react-posgresql-2flv11w0o-esmurzelly.vercel.app/',
           code: 'https://github.com/Esmurzelly/react-posgresql',
           stack: ['ReactJS', 'NodeJS', 'Express', 'Bootstrap']
+        },
+        {
+          id: 15,
+          type: 'web_app',
+          title: 'Portfoilio',
+          description: 'My personal portfolio using ReactJS, NodeJS and Redux Toolkit',
+          mainUrl: PortfolioImg,
+          live: 'https://react-posgresql-2flv11w0o-esmurzelly.vercel.app/',
+          code: 'https://github.com/Esmurzelly/react-posgresql',
+          stack: ['ReactJS', 'NodeJS', 'Express', 'Bootstrap', 'Redux Toolkit']
         },
       ]
     },

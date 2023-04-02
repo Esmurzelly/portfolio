@@ -1,7 +1,13 @@
-.button_detail {
+.card_content__img img {
+  width: 400px;
+  padding: 10px;
+}
+.button_detail,
+.button_go_to {
   width: 100px;
 }
-.button_detail a {
+.button_detail a,
+.button_go_to a {
   color: #fff;
   text-decoration: none;
 }
@@ -27,4 +33,9 @@
 
 .card_content__img img {
   border-radius: 20px;
+}
+
+.button_go_to > a {
+  display: flex;
+  align-items: center;
 }
