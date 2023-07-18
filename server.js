@@ -6,9 +6,14 @@ const nodemailer = require('nodemailer');
 // server used to send emails
 const app = express();
 app.use(cors());
+router.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.listen(5000, () => console.log('server running'));
+app.listen(5000, () => {
+  console.log('server running')
+}).on('error', (err) => {
+  console.error("Ошибка при запуске сервера: ", err.message);
+});
 
 app.get('/', (req, res) => {
   res.send('Hello world');
@@ -50,6 +55,7 @@ router.post('/contact', (req, res) => {
   contactEmail.sendMail(mail, error => {
     if (error) {
       res.json(error);
+      console.log('error: ', res.json(error))
     } else {
       res.json({ code: 200, status: 'Message sent' });
     }
