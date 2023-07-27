@@ -12,6 +12,8 @@ import logo_sass from '../assets/img/stack/sass.svg';
 import logo_tailwind from '../assets/img/stack/tailwind.svg';
 import logo_vscode from '../assets/img/stack/vscode.svg';
 import logo_figma from '../assets/img/stack/figma.svg';
+import logo_typescript from '../assets/img/stack/typescript.svg';
+import logo_vite from '../assets/img/stack/vite.svg';
 
 
 const skillsSlice = createSlice({
@@ -30,33 +32,33 @@ const skillsSlice = createSlice({
       },
       {
         id: 3,
-        name: 'logo_bootstrap',
-        logo: logo_bootstrap,
-      },
-      {
-        id: 4,
-        name: 'logo_git',
-        logo: logo_git,
-      },
-      {
-        id: 5,
-        name: 'logo_github',
-        logo: logo_github,
-      },
-      {
-        id: 6,
         name: 'logo_js',
         logo: logo_js,
       },
       {
-        id: 7,
+        id: 4,
+        name: "logo_typescript",
+        logo: logo_typescript
+      },
+      {
+        id: 5,
         name: 'logo_react',
         logo: logo_react,
       },
       {
-        id: 8,
+        id: 6,
         name: 'logo_redux',
         logo: logo_redux,
+      },
+      {
+        id: 7,
+        name: 'logo_vite',
+        logo: logo_vite,
+      },
+      {
+        id: 8,
+        name: 'logo_bootstrap',
+        logo: logo_bootstrap,
       },
       {
         id: 9,
@@ -70,8 +72,8 @@ const skillsSlice = createSlice({
       },
       {
         id: 11,
-        name: 'logo_vscode',
-        logo: logo_vscode,
+        name: 'logo_git',
+        logo: logo_git,
       },
       {
         id: 12,
@@ -79,7 +81,7 @@ const skillsSlice = createSlice({
         logo: logo_figma,
       },
     ]
-  }, 
+  },
   reducers: {}
 });
 

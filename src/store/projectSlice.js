@@ -3,22 +3,22 @@ import { createSlice } from "@reduxjs/toolkit";
 import DictionaryAppImg from '../assets/img/projects/DictionaryApp/main.png';
 import BankCardCheckingImg from '../assets/img/projects/Card Holder/main.png';
 import CountriesListImg from '../assets/img/projects/Country API/main.png';
-
 import QRCodeImg from '../assets/img/projects/QR/main.png';
+
 import JobsFilteringImg from '../assets/img/projects/Jobs_filter/main.png';
 import PAMImg from '../assets/img/projects/PAM/main.png';
-
 import BlankoImg from '../assets/img/projects/Blanko/main.png';
 import FullPage3DImg from '../assets/img/projects/3D Fullpage/main.png';
+
 import GenerativeArtImg from '../assets/img/projects/GenerativeArt/main.png';
 import VideoPlayerImg from '../assets/img/projects/Video player/main.png';
 import WaterCompanyImg from '../assets/img/projects/WaterCompany/main.png';
-
 import DHLImg from '../assets/img/projects/DHL/main.png';
+
 import Cube3D from '../assets/img/projects/Cube3D/main.png';
 import ListDatabase from '../assets/img/projects/React + PostgreSQL/main.png';
 import PortfolioImg from '../assets/img/projects/Portfolio/portfilio.png'
-
+import FitnessImg from '../assets/img/projects/Fitness/main.png'
 
 const projectSlice = createSlice({
     name: 'project',
@@ -29,11 +29,11 @@ const projectSlice = createSlice({
           type: 'web_app',
           title: 'DictionaryApp',
           description:
-            'Let you know meaning, synonims, examples and sound pronunciation',
+            'Let you learn English words and phrases',
           mainUrl: DictionaryAppImg,
-          live: 'https://dictionary-kyub7jd9c-esmurzelly.vercel.app/',
-          code: 'https://github.com/Esmurzelly/dictionaryApp',
-          stack: ['ReactJS', 'styled-components', 'SCSS']
+          live: 'https://dictionary--application.pages.dev/',
+          code: 'https://github.com/Esmurzelly/dictionary__application',
+          stack: ['ReactJS', 'TypeScript', 'TailwindCSS', 'Redux Toolkit', 'NodeJS', "Express"]
         },
         {
           id: 2,
@@ -52,9 +52,9 @@ const projectSlice = createSlice({
           description:
             'This service provides you all exsisted countries and info about them',
           mainUrl: CountriesListImg,
-          live: 'https://countries-nq77kqn3b-esmurzelly.vercel.app/',
-          code: 'https://github.com/Esmurzelly/countriesAPI',
-          stack: ['ReactJS', 'react-router-dom', 'Bootstrap']
+          live: 'https://country-list-hyxk.vercel.app/',
+          code: 'https://github.com/Esmurzelly/country__list',
+          stack: ['ReactJS', 'TypeScript', 'TailwindCSS', 'React Router Dom']
         },
         {
           id: 4,
@@ -175,6 +175,16 @@ const projectSlice = createSlice({
           mainUrl: PortfolioImg,
           live: 'https://react-posgresql-2flv11w0o-esmurzelly.vercel.app/',
           code: 'https://github.com/Esmurzelly/react-posgresql',
+          stack: ['ReactJS', 'NodeJS', 'Express', 'Bootstrap', 'Redux Toolkit']
+        },
+        {
+          id: 16,
+          type: 'web_app',
+          title: 'Fitness Application',
+          description: 'Web application for fitness club',
+          mainUrl: FitnessImg,
+          live: 'https://fitness--application.pages.dev/',
+          code: 'https://github.com/Esmurzelly/fitness__application',
           stack: ['ReactJS', 'NodeJS', 'Express', 'Bootstrap', 'Redux Toolkit']
         },
       ]
