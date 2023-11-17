@@ -4,16 +4,17 @@ import logo_html from '../assets/img/stack/html.svg';
 import logo_css from '../assets/img/stack/css.svg';
 import logo_bootstrap from '../assets/img/stack/bootstrap.svg';
 import logo_git from '../assets/img/stack/git.svg';
-import logo_github from '../assets/img/stack/github.svg';
 import logo_js from '../assets/img/stack/js.svg';
 import logo_react from '../assets/img/stack/react.svg';
 import logo_redux from '../assets/img/stack/redux.svg';
 import logo_sass from '../assets/img/stack/sass.svg';
 import logo_tailwind from '../assets/img/stack/tailwind.svg';
-import logo_vscode from '../assets/img/stack/vscode.svg';
 import logo_figma from '../assets/img/stack/figma.svg';
 import logo_typescript from '../assets/img/stack/typescript.svg';
 import logo_vite from '../assets/img/stack/vite.svg';
+import logo_mongodb from '../assets/img/stack/mongodb.svg';
+import logo_nodejs from '../assets/img/stack/nodejs.svg';
+import logo_docker from '../assets/img/stack/docker.svg';
 
 
 const skillsSlice = createSlice({
@@ -57,8 +58,8 @@ const skillsSlice = createSlice({
       },
       {
         id: 8,
-        name: 'logo_bootstrap',
-        logo: logo_bootstrap,
+        name: 'logo_docker',
+        logo: logo_docker,
       },
       {
         id: 9,
@@ -79,6 +80,16 @@ const skillsSlice = createSlice({
         id: 12,
         name: 'logo_figma',
         logo: logo_figma,
+      },
+      {
+        id: 13,
+        name: 'logo_nodejs',
+        logo: logo_nodejs,
+      },
+      {
+        id: 14,
+        name: 'logo_mongodb',
+        logo: logo_mongodb,
       },
     ]
   },

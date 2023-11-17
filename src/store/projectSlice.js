@@ -20,6 +20,9 @@ import ListDatabase from '../assets/img/projects/React + PostgreSQL/main.png';
 import PortfolioImg from '../assets/img/projects/Portfolio/portfilio.png'
 import FitnessImg from '../assets/img/projects/Fitness/main.png'
 
+import CoffeeHouseImg from '../assets/img/projects/CoffeeHouse/coffeehouse.png';
+import StpImg from '../assets/img/projects/Stp/stpImg.png';
+
 const projectSlice = createSlice({
     name: 'project',
     initialState: {
@@ -29,7 +32,7 @@ const projectSlice = createSlice({
           type: 'web_app',
           title: 'DictionaryApp',
           description:
-            'Let you learn English words and phrases',
+            'Let you to learn English words and phrases',
           mainUrl: DictionaryAppImg,
           live: 'https://dictionary--application.pages.dev/',
           code: 'https://github.com/Esmurzelly/dictionary__application',
@@ -185,7 +188,27 @@ const projectSlice = createSlice({
           mainUrl: FitnessImg,
           live: 'https://fitness--application.pages.dev/',
           code: 'https://github.com/Esmurzelly/fitness__application',
-          stack: ['ReactJS', 'NodeJS', 'Express', 'Bootstrap', 'Redux Toolkit']
+          stack: ['ReactJS', 'Vite', 'TypeScript', 'TailwindCSS']
+        },
+        {
+          id: 17,
+          type: 'web_site',
+          title: 'CoffeeHouse Site',
+          description: 'Web site for coffeehouse',
+          mainUrl: CoffeeHouseImg,
+          live: 'https://coffeehouse-five.vercel.app/',
+          code: 'https://github.com/Esmurzelly/coffeehouse',
+          stack: ['ReactJS', 'Vite', 'TypeScript', 'TailwindCSS']
+        },
+        {
+          id: 18,
+          type: 'web_app',
+          title: 'BeSafe Application',
+          description: 'The web application for tracking any criminal on the streets',
+          mainUrl: StpImg,
+          live: 'https://besafeapp.ru/',
+          code: 'https://github.com/Esmurzelly/stp--application',
+          stack: ['ReactJS', 'NodeJS', 'Express', 'MongoDB', 'TailwindCSS', 'Redux Toolkit', 'Leaflet']
         },
       ]
     },
